@@ -1,10 +1,75 @@
-<?php
-$page_title = "UFC — Union des Forces de Changement";
-$page_description = "Union des Forces de Changement (UFC) — parti politique togolais fondé en 1992. Démocratie, justice sociale, bonne gouvernance.";
-$active = 'accueil';
-$body_class = 'index-page';
-include __DIR__ . '/partials/header.php';
-?>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>UFC — Union des Forces de Changement</title>
+  <meta name="description" content="Union des Forces de Changement (UFC) — parti politique togolais fondé en 1992. Démocratie, justice sociale, bonne gouvernance.">
+  <meta name="keywords" content="UFC, Union des Forces de Changement, Togo, parti politique">
+
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendors/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendors/aos/aos.css" rel="stylesheet">
+  <link href="vendors/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/ufc/logo-ufc.jpg" alt="Logo UFC">
+        <div>
+          <h1 class="sitename">UFC</h1>
+          <span class="baseline">Union des Forces de Changement</span>
+        </div>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Accueil</a></li>
+
+          <li class="dropdown">
+            <a href="about.html" class=""><span>L'UFC</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="about.html">Qui sommes-nous</a></li>
+              <li><a href="histoire.html">Notre histoire</a></li>
+              <li><a href="valeurs.html">Nos valeurs</a></li>
+              <li><a href="vision.html">Notre vision</a></li>
+              <li><a href="responsables.html">Nos responsables</a></li>
+            </ul>
+          </li>
+
+          <li><a href="engagements.html" class="">Nos engagements</a></li>
+
+          <li class="dropdown">
+            <a href="actualites.html" class=""><span>Actualités</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="actualites.html">Toutes les actualités</a></li>
+              <li><a href="communiques.html">Communiqués officiels</a></li>
+            </ul>
+          </li>
+
+          <li><a href="agenda.html" class="">Agenda</a></li>
+          <li><a href="contact.html" class="">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a href="rejoindre.html" class="btn-cta d-none d-xl-inline-flex">Rejoindre l'UFC</a>
+
+    </div>
+  </header>
+
+  <main class="main">
 
     <!-- Hero Section -->
     <section id="hero" class="hero section">
@@ -20,8 +85,8 @@ include __DIR__ . '/partials/header.php';
               <p>L'Union des Forces de Changement œuvre pour la consolidation de la démocratie, la justice sociale, la bonne gouvernance et l'amélioration des conditions de vie de chaque citoyen togolais.</p>
 
               <div class="cta-row">
-                <a href="about.php" class="btn-pill">Découvrir l'UFC</a>
-                <a href="actualites.php" class="link-arrow">Nos actualités <i class="bi bi-arrow-right"></i></a>
+                <a href="about.html" class="btn-pill">Découvrir l'UFC</a>
+                <a href="actualites.html" class="link-arrow">Nos actualités <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -121,7 +186,7 @@ include __DIR__ . '/partials/header.php';
               <span class="eyebrow">Qui sommes-nous</span>
               <h3>Un parti au service de la démocratie togolaise depuis 1992</h3>
               <p>L'Union des Forces de Changement est un parti politique togolais qui œuvre depuis sa création pour la consolidation de la démocratie, la bonne gouvernance et l'amélioration des conditions de vie des citoyens.</p>
-              <a href="about.php" class="link-arrow">En savoir plus sur l'UFC <i class="bi bi-arrow-right"></i></a>
+              <a href="about.html" class="link-arrow">En savoir plus sur l'UFC <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
@@ -220,7 +285,7 @@ include __DIR__ . '/partials/header.php';
         </div>
 
         <div class="text-center mt-5" data-aos="fade-up">
-          <a href="engagements.php" class="link-arrow">Voir le détail de nos engagements <i class="bi bi-arrow-right"></i></a>
+          <a href="engagements.html" class="link-arrow">Voir le détail de nos engagements <i class="bi bi-arrow-right"></i></a>
         </div>
 
       </div>
@@ -235,7 +300,7 @@ include __DIR__ . '/partials/header.php';
           <span class="eyebrow">Notre ambition</span>
           <h2>Un Togo où chaque citoyen compte.</h2>
           <p>Nous croyons en un Togo où les institutions servent les citoyens, où les libertés sont respectées et où les opportunités de développement sont accessibles à tous, sur l'ensemble du territoire.</p>
-          <a href="rejoindre.php" class="btn-pill">Rejoindre le mouvement <i class="bi bi-arrow-right"></i></a>
+          <a href="rejoindre.html" class="btn-pill">Rejoindre le mouvement <i class="bi bi-arrow-right"></i></a>
         </div>
       </div>
 
@@ -266,12 +331,12 @@ include __DIR__ . '/partials/header.php';
               <div class="image-wrap">
                 <img src="assets/img/ufc/declaration-presse-3.jpeg" class="img-fluid" alt="Déclaration sur la situation politique nationale" loading="lazy">
                 <div class="hover-actions">
-                  <a href="actualites.php" title="Lire la suite"><i class="bi bi-arrow-up-right"></i></a>
+                  <a href="actualites.html" title="Lire la suite"><i class="bi bi-arrow-up-right"></i></a>
                 </div>
               </div>
               <div class="card-meta">
                 <span class="category">Actualité politique</span>
-                <h4><a href="actualites.php">Déclaration sur la situation politique nationale</a></h4>
+                <h4><a href="actualites.html">Déclaration sur la situation politique nationale</a></h4>
               </div>
             </div>
           </div><!-- End Actu Item -->
@@ -281,12 +346,12 @@ include __DIR__ . '/partials/header.php';
               <div class="image-wrap">
                 <img src="assets/img/ufc/banniere-congres-statutaire.jpeg" class="img-fluid" alt="Grand rassemblement des militants à Lomé" loading="lazy">
                 <div class="hover-actions">
-                  <a href="actualites.php" title="Lire la suite"><i class="bi bi-arrow-up-right"></i></a>
+                  <a href="actualites.html" title="Lire la suite"><i class="bi bi-arrow-up-right"></i></a>
                 </div>
               </div>
               <div class="card-meta">
                 <span class="category">Vie du parti</span>
-                <h4><a href="actualites.php">Grand rassemblement des militants à Lomé</a></h4>
+                <h4><a href="actualites.html">Grand rassemblement des militants à Lomé</a></h4>
               </div>
             </div>
           </div><!-- End Actu Item -->
@@ -296,12 +361,12 @@ include __DIR__ . '/partials/header.php';
               <div class="image-wrap">
                 <img src="assets/img/ufc/declaration-presse-4.jpeg" class="img-fluid" alt="Le bureau politique s'exprime devant la presse" loading="lazy">
                 <div class="hover-actions">
-                  <a href="actualites.php" title="Lire la suite"><i class="bi bi-arrow-up-right"></i></a>
+                  <a href="actualites.html" title="Lire la suite"><i class="bi bi-arrow-up-right"></i></a>
                 </div>
               </div>
               <div class="card-meta">
                 <span class="category">Déclarations</span>
-                <h4><a href="actualites.php">Le bureau politique s'exprime devant la presse</a></h4>
+                <h4><a href="actualites.html">Le bureau politique s'exprime devant la presse</a></h4>
               </div>
             </div>
           </div><!-- End Actu Item -->
@@ -309,7 +374,7 @@ include __DIR__ . '/partials/header.php';
         </div>
 
         <div class="text-center mt-5" data-aos="fade-up">
-          <a href="actualites.php" class="btn-pill outline">Voir toutes les actualités</a>
+          <a href="actualites.html" class="btn-pill outline">Voir toutes les actualités</a>
         </div>
 
       </div>
@@ -345,7 +410,7 @@ include __DIR__ . '/partials/header.php';
                 <li><i class="bi bi-geo-alt"></i> Lomé, siège fédéral</li>
                 <li><i class="bi bi-clock"></i> 10h00</li>
               </ul>
-              <a href="agenda.php" class="read-more">Voir l'événement <i class="bi bi-arrow-right"></i></a>
+              <a href="agenda.html" class="read-more">Voir l'événement <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Agenda Item -->
 
@@ -358,18 +423,117 @@ include __DIR__ . '/partials/header.php';
                 <li><i class="bi bi-geo-alt"></i> Kara</li>
                 <li><i class="bi bi-clock"></i> 15h00</li>
               </ul>
-              <a href="agenda.php" class="read-more">Voir l'événement <i class="bi bi-arrow-right"></i></a>
+              <a href="agenda.html" class="read-more">Voir l'événement <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Agenda Item -->
 
         </div>
 
         <div class="text-center mt-5" data-aos="fade-up">
-          <a href="agenda.php" class="link-arrow">Voir tout l'agenda <i class="bi bi-arrow-right"></i></a>
+          <a href="agenda.html" class="link-arrow">Voir tout l'agenda <i class="bi bi-arrow-right"></i></a>
         </div>
 
       </div>
 
     </section><!-- /Agenda -->
 
-<?php include __DIR__ . '/partials/footer.php'; ?>
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container">
+      <div class="footer-cta">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-7">
+            <h2>Recevez les informations de l'UFC<span>.</span></h2>
+            <p class="newsletter-p">Inscrivez-vous pour recevoir les actualités, communiqués et événements du mouvement. Vous pourrez vous désabonner à tout moment.</p>
+          </div>
+          <div class="col-lg-5 text-lg-end">
+            <form action="forms/newsletter.html" method="post" class="newsletter-form ms-lg-auto">
+              <input type="email" name="email" placeholder="Votre adresse e-mail" required="">
+              <button type="submit" class="btn-pill">S'inscrire</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="assets/img/ufc/logo-ufc.jpg" alt="Logo UFC">
+            <span class="sitename">UFC<span class="dot">.</span></span>
+          </a>
+          <p>Union des Forces de Changement — un parti engagé pour la démocratie, la justice sociale et le développement du Togo.<br>www.ufctogo.tg</p>
+          <div class="social-links d-flex mt-4">
+            <a href="#" aria-label="Facebook" title="À renseigner"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="X" title="À renseigner"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="Instagram" title="À renseigner"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="YouTube" title="À renseigner"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-6 footer-links">
+          <h4>Explorer</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">L'UFC</a></li>
+            <li><a href="engagements.html">Nos engagements</a></li>
+            <li><a href="actualites.html">Actualités</a></li>
+            <li><a href="agenda.html">Agenda</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-6 footer-links">
+          <h4>Le parti</h4>
+          <ul>
+            <li><a href="histoire.html">Notre histoire</a></li>
+            <li><a href="valeurs.html">Nos valeurs</a></li>
+            <li><a href="responsables.html">Nos responsables</a></li>
+            <li><a href="communiques.html">Communiqués</a></li>
+            <li><a href="rejoindre.html">Rejoindre l'UFC</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-contact">
+          <h4>Nous contacter</h4>
+          <a href="mailto:partiufctogo@gmail.com" class="email-link">partiufctogo@gmail.com</a>
+          <p class="phone">(228) 92 23 03 03</p>
+          <p class="address">22 BP 158, Lomé, Togo</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <strong class="px-1 sitename">UFC</strong> <span>— Union des Forces de Changement — Tous droits réservés</span></p>
+      <div class="legal-links">
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Gestion des cookies</a>
+      </div>
+    
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendors/php-email-form/validate.js"></script>
+  <script src="vendors/aos/aos.js"></script>
+  <script src="vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="vendors/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendors/glightbox/js/glightbox.min.js"></script>
+  <script src="vendors/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
